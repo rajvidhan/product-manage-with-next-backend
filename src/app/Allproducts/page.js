@@ -21,8 +21,8 @@ const page = async () => {
           </tr>
         </thead>
         <tbody>
-          {data.map((d) => (
-            <tr className="flex flex-row">
+          {data.map((d,index) => (
+            <tr key={index} className="flex flex-row">
               <td className="mr-10">{d.name}</td>
               <td className="mr-10">{d.price}</td>
               <td className="mr-10">{d.color}</td>
